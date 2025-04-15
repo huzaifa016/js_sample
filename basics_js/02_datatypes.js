@@ -11,7 +11,7 @@ let age = 18
 let isLoggedIn = false 
 let state = null
 
-//========== premitive datatypes =======
+//========== primitive datatypes =======
 //numbers => 2^53 (range)
 //bigint
 //strings => ""
@@ -21,8 +21,8 @@ let state = null
 //symbole => unique
 
 
-//========== non premitive datatypes====
-//objects
+//========== non primitive datatypes====
+//objects , Arrays , Functions
 
 console.log(typeof null); //object
 console.log(typeof undefined); //undefined
