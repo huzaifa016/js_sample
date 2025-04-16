@@ -28,3 +28,28 @@ console.log(typeof null); //object
 console.log(typeof undefined); //undefined
 
 
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// stacks(primitive) ,  Heap(non primitive)
+
+let Myyoutubename = "CookWithMe"
+
+let anotherName = Myyoutubename
+anotherName = "MyKitchen"
+
+console.log(Myyoutubename);
+console.log(anotherName);
+
+let user1 = {
+    email : "user1@google.com" ,
+    upi : "7654@ybl"
+}
+
+let user2 = user1
+
+user2.email = "users@google.com"
+
+console.log(user1.email)
+console.log(user2.email);
+
+
+
