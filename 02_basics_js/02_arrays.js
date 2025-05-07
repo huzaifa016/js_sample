@@ -22,11 +22,11 @@ console.log(real_another_array);
 
 
 console.log(Array.isArray("Huzaifa"))
-console.log(Array.from("Huzaifa"))
-console.log(Array.from({name: "huzaifa"})) // interesting
+console.log(Array.from("Huzaifa"))         // from converts value (obj, string )into array    
+console.log(Array.from({name: "huzaifa"})) // interesting. it gives empty array coz we should tell if we need keys arr or values arr
 
 let score1 = 100
 let score2 = 200
 let score3 = 300
 
-console.log(Array.of(score1, score2, score3));
+console.log(Array.of(score1, score2, score3)); //Returns a new array from a set of elements.
