@@ -1,6 +1,6 @@
 
-// const tinderUser = new Object()
-const tinderUser = {}
+// const tinderUser = new Object() // this is singleton obj...can declare this way
+const tinderUser = {}              // not a singleton object   
 
 tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
@@ -11,23 +11,24 @@ tinderUser.isLoggedIn = false
 const regularUser = {
     email: "some@gmail.com",
     fullname: {
-        userfullname: {
+        userfullname: {               //we can declare objects inside object
             firstname: "Huzaifa",
             lastname: "Siddiqa"
         }
     }
 }
 
-// console.log(regularUser.fullname.userfullname.firstname);
-
+// console.log(regularUser.fullname.userfullname.firstname);  //accessing the object insside obj using . dot operator
+ 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
 const obj4 = {5: "a", 6: "b"}
 
+//************ merging objects ******************
 // const obj3 = { obj1, obj2 }
-// const obj3 = Object.assign({}, obj1, obj2, obj4)
+// const obj3 = Object.assign({}, obj1, obj2, obj4)  // {} act as target and obj 1 2 & 3 act as source. assign mdn
 
-const obj3 = {...obj1, ...obj2}
+const obj3 = {...obj1, ...obj2}  // best way to merge obj using ... spread operator
 // console.log(obj3);
 
 
