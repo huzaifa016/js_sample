@@ -73,8 +73,11 @@ const {courseInstructor: instructor} = course // here we are changing courseInst
 // console.log(courseInstructor);             // we usually use {} for deconstruction
 console.log(instructor);
 
+
+//****************************** JSON  ***************/
+
 // {
-//     "name": "huzaifa",
+//     "name": "huzaifa",                   //almost in the form of obj bt key n value r treated as strings n theres no obj name
 //     "coursename": "javascript",
 //     "price": "free"
 // }
