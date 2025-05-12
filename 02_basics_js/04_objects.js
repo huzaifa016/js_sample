@@ -32,7 +32,7 @@ const obj3 = {...obj1, ...obj2}  // best way to merge obj using ... spread opera
 // console.log(obj3);
 
 
-const users = [
+const users = [                    // its array of objects
     {
         id: 1,
         email: "h@gmail.com"
@@ -47,15 +47,17 @@ const users = [
     },
 ]
 
-users[1].email
+users[1].email                  // accessing array of obj with this simple syntax
 // console.log(tinderUser);
 
-// console.log(Object.keys(tinderUser));
-// console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));        //here will get keys in array formate as output
+// console.log(Object.values(tinderUser));      //we get values in array formate as output
+// console.log(Object.entries(tinderUser));     // we get seperate key value pairs as arrays
 
-// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));  //hasOwnProperty is used to check weather this property present or not & returns true or false
 
+
+//****************** Deconstruction ****************************/
 
 const course = {
     coursename: "javascript",
@@ -63,11 +65,12 @@ const course = {
     courseInstructor: "huzaifa"
 }
 
-// course.courseInstructor
+// course.courseInstructor  //instead of this we can use const {courseInstructor: instructor} = course 
 
-const {courseInstructor: instructor} = course
+const {courseInstructor: instructor} = course // here we are changing courseInstructor as instructor in shorter way
 
-// console.log(courseInstructor);
+
+// console.log(courseInstructor);             // we usually use {} for deconstruction
 console.log(instructor);
 
 // {
