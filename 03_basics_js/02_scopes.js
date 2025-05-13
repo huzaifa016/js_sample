@@ -51,7 +51,7 @@ function addone(num){
 
 
 
-addTwo(5)                       //gives  error
+addTwo(5)                       //gives  error (coz of hosting)
 const addTwo = function(num){  //expression holding func
     return num + 2
 }
