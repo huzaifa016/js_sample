@@ -40,11 +40,14 @@ function loginUserMessage(username = "sam"){   //if we dont pass args it will re
 // console.log(loginUserMessage("huzaifa"))
 
 
-function calculateCartPrice(val1, val2, ...num1){
-    return num1
+function calculateCartPrice(val1, val2, ...num1){    //... is rest operator used when u dont know the number of arguments passed and gives output as array
+    return num1                                      // val1 = 200 val2= 400 ...num1 means [500,2000]
 }
 
 // console.log(calculateCartPrice(200, 400, 500, 2000))
+
+
+//********** passing objects in functions *******************************
 
 const user = {
     username: "huzaifa",
@@ -56,10 +59,16 @@ function handleObject(anyobject){
 }
 
 // handleObject(user)
+
+
+//********************* object inside functions ************** 
 handleObject({
     username: "sam",
     price: 399
 })
+
+
+//***************** passing Arrays inside functions **************/
 
 const myNewArray = [200, 400, 100, 600]
 
@@ -68,4 +77,4 @@ function returnSecondValue(getArray){
 }
 
 // console.log(returnSecondValue(myNewArray));
-console.log(returnSecondValue([200, 400, 500, 1000]));
+console.log(returnSecondValue([200, 400, 500, 1000])); //or else we can pass array directly this way
