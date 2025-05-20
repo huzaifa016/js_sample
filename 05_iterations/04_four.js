@@ -23,4 +23,5 @@ for (const key in programming) {
 
 // for (const key in map) {
 //     console.log(key);
-// }
+// }                               
+//maps wont work in for in loop as it is not iterable
